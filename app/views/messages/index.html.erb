@@ -15,19 +15,14 @@
 <%= form_for(@message) do |f| %>
 
   名前:
-  <%= f.text_area :name %>
+  <%= f.text_area :name, :class => "form-horizontal", cols: "40", rows: "1" %>
 
  <br/>
   内容:
-  <%= f.text_area :body %>
+  <%= f.text_area :body, :class => "form-horizontal", cols: "100", rows: "5"%>
  <br/>
   
-  <%= f.submit class: "btn btn-sm btn-primary" 
-  <button class=”btn btn-primary”>
-　　<span class=”glyphicon glyphicon-send”> 送信 
-  </button>%>
+  <%= f.submit class: "btn btn-sm btn-primary" %>
   </div>
 <% end %>
-
-
 
